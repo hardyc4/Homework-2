@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Resume</string>
+    <string name="buttonEmailMe">Email Me</string>
+    <string name="buttonCallMe">Call Me</string>
+    <string name="buttonEducation">Education</string>
+    <string name="buttonWorkEp">Work History</string>
+</resources>

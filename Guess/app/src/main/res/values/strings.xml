@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Guess</string>
+    <string name="start_msg">Guess the Number</string>
+    <string name="tooHigh">Too High</string>
+    <string name="tooLow">Too Low</string>
+    <string name="congrats">"Congratulations ! You found the number!"</string>
+</resources>
