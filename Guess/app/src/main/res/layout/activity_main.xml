@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
     tools:context=".MainActivity">
 
     <EditText
@@ -10,8 +11,12 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="150dp"
         android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textAlignment="center"
         android:text="Enter Guess"/>
 
 
@@ -22,6 +27,13 @@
         android:layout_below="@id/numberEnteredEt"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#A504CD"
+        app:cornerRadius="10dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="#000000"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
         android:text="Calculate"/>
 
     <Button
@@ -31,17 +43,41 @@
         android:layout_below="@id/validate"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#A504CD"
+        app:cornerRadius="10dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="#000000"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
         android:text="Clear" />
 
     <TextView
         android:id="@+id/start_msg"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/clear"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="60dp"
         android:text="@string/start_msg"
         android:textSize="22sp"
-        android:textStyle="bold"/>
+        android:textColor="#FFFFFF"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textViewWinner"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_msg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text=" "
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textAlignment="center" />
 
 </RelativeLayout>

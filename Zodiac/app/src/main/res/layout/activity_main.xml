@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textColor="#000000"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:text="Zodiac"
+        android:textSize="35dp"/>
+
+    <EditText
+        android:id="@+id/editTextMonth"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:hint="@string/editTextMonth" />
+
+    <EditText
+        android:id="@+id/editTextDay"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextMonth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:hint="@string/editTextDay" />
+
+    <EditText
+        android:id="@+id/editTextYear"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:hint="@string/editTextYear" />
+
+    <ImageButton
+        android:id="@+id/buttonValidate"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/editTextYear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        app:backgroundTint="#A504CD"/>
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonValidate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#A504CD"
+        app:cornerRadius="10dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="#000000"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:text="@string/buttonClear" />
+
+
+</RelativeLayout>

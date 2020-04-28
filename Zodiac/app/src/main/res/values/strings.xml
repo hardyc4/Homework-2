@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Zodiac</string>
+    <string name="editTextMonth">"Month: "</string>
+    <string name="editTextDay">"Day: "</string>
+    <string name="editTextYear">"Year: "</string>
+    <string name="buttonClear">CLear</string>
+</resources>

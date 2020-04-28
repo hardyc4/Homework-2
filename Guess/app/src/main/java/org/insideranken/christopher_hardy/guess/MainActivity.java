@@ -12,14 +12,18 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener
 {
-    public static final int MAXNUMBER = 3;
+    public static final int MAXNUMBER = 100;
+
     private TextView msgTv;
     private EditText numberEnteredEt;
     private Button validate;
     private Button clear;
+    private TextView textViewWinner;
 
     public static final Random RANDOM = new Random();
-    private int numberToFind, numberTries;
+    private int numberToFind;
+    public static int numberTries = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         numberEnteredEt = (EditText) findViewById(R.id.numberEnteredEt);
         validate = (Button) findViewById(R.id.validate);
         clear = (Button) findViewById(R.id.clear);
+        textViewWinner = (TextView) findViewById(R.id.textViewWinner);
         validate.setOnClickListener(this);
         clear.setOnClickListener(this);
 
@@ -47,14 +52,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void validate() {
         int n = Integer.parseInt(numberEnteredEt.getText().toString());
-        numberTries++;
 
         if (n == numberToFind) {
             msgTv.setText(R.string.congrats);
+            textViewWinner.setText(numberTries + R.string.tries); /* For some reason this breaks the program? */
         } else if (n > numberToFind) {
             msgTv.setText(R.string.tooHigh);
+            numberTries++;
         } else if (n < numberToFind) {
             msgTv.setText(R.string.tooLow);
+            numberTries++;
         }
     }
 
